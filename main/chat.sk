@@ -1,5 +1,6 @@
 on chat:
     set chat format to "&7%colored player's prefix% %player% %colored player's suffix% &f%colored message%"
+    play sound "entity.chicken.egg" to all players
 
 on join:
     set join message to "&a + %player%"
