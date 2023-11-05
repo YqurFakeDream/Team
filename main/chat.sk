@@ -3,9 +3,11 @@ on chat:
 
 on join:
     set join message to "&a + %player%"
+    play sound "block.end_portal_frame.fill" to all players
 
 on first join:
     set join message to "&e + %player%"
+
 
 on quit:
     set quit message to ""
