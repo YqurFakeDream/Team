@@ -8,7 +8,7 @@ on join:
 
 on first join:
     set join message to "&e + %player%"
-
+    play sound "block.amethyst_block.place" to all players
 
 on quit:
     set quit message to ""
