@@ -1,0 +1,15 @@
+options:
+    yml_file: "kingdom/kingdoms.yml"
+    pl_file: "kingdom/players.yml"
+
+on load:
+    load yaml {@yml_file} as "kd"
+    load yaml {@pl_file} as "players"
+
+local function initialize_kingdom(key: string, name: string) :: boolean: # skript 2.7+
+    if {_key} contains ".":
+        return false
+    if yaml value {_key} of "kd" is set:
+        return false
+    set yaml value "%{_key}%.name" of "kd" to {_name}
+    return true
