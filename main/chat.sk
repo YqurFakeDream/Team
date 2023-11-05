@@ -1,2 +1,11 @@
 on chat:
     set chat format to "&7%colored player's prefix% %player% %colored player's suffix% &f%colored message%"
+
+on join:
+    set join message to "&a + %player%"
+
+on first join:
+    set join message to "&e + %player%"
+
+on quit:
+    set quit message to ""
