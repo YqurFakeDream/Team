@@ -1,0 +1,2 @@
+on chat:
+    set chat format to "&7%player's prefix% %player% %player's suffix% &f%colored message%"
