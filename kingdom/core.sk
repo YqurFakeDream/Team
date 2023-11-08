@@ -13,3 +13,8 @@ local function initialize_kingdom(key: string, name: string) :: boolean: # skrip
         return false
     set yaml value "%{_key}%.name" of "kd" to {_name}
     return true
+
+function playerId(p: player) :: string:
+    if name of {_p} contains ".":
+        return subtext of name of {_p} from character 2 to character length of name of {_p}
+    return uuid of {_p}
